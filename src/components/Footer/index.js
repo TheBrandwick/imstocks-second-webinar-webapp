@@ -22,7 +22,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="item-list">
-          <h3>Product</h3>
+          <h3>Company</h3>
           <ul>
             <li>
               <a href="#">Masterclass</a>

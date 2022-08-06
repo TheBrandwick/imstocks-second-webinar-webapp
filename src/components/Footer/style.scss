@@ -10,13 +10,29 @@
         margin-bottom: 50px;
         img{
             width: 50%;
+
+            @media (max-width: 480px) {
+                width: 90%;
+                margin: 0 auto;
+            }
         }
+
     }
 
     .footer-content{
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px;
+
+        // media query for mobile
+        @media (max-width: 480px) {
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            margin-left: 30px;
+
+        }
+
         .item-list{
             h3{
                 color: #fff;
@@ -42,8 +58,8 @@
     .footer-copyright{
         margin-top: 20px;
         margin-bottom: 20px;
-        color: #fff;
         font-size: 14px;
         text-align: center;
+        color: #9c9692;
     }
 }

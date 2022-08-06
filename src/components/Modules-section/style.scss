@@ -6,6 +6,7 @@
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding: 2px;
   color: #fff;
   .module-header {
     margin-top: 80px;
@@ -18,10 +19,24 @@
     line-height: 170px;
     font-weight: 400;
 
+   
+
     span {
       font-size: 180px;
       text-decoration: underline;
     }
+
+    // mobile media query
+    @media (max-width: 480px) {
+      display: block;
+      margin-top: 40px;
+      font-size: 80px;
+      line-height: 120px;
+      span {
+        font-size: 130px;
+      }
+    }
+
   }
 
   .module-desc {
@@ -39,11 +54,25 @@
     line-height: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    // mobile media query
+    @media (max-width: 480px) {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
   }
 
   .module-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    // mobile media query
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
 
     .module-list-item {
       margin-bottom: 30px;
@@ -103,6 +132,13 @@
     text-align: center;
     width: 40%;
     cursor: pointer;
+
+    // mobile media query
+    @media (max-width: 480px) {
+      width: 80%;
+      margin:20px auto; 
+    }
+
   }
 }
 
@@ -119,6 +155,22 @@
       color: #aff000;
     }
 
+    @media (max-width: 480px) {
+      padding-right: 0px;
+      padding-left: 0px;
+      background-image: url("https://uploads-ssl.webflow.com/5f4187883301b768b8a33763/620dd9c579c9c79df55169de_market-research.png");
+      background-position: 100% 110%;
+      background-size: 100px;
+      background-repeat: no-repeat;
+      margin: 40px auto -10px;
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 80px;
+      line-height: 70px;
+      font-style: normal;
+      text-align: left;
+      padding-bottom: 20px;
+    }
   
   }
   .stock-detail-card{
@@ -127,6 +179,12 @@
     width: 500px;
     min-height: 300px;
     position: relative;
+
+    // mobile media query
+    @media (max-width: 480px) {
+      width: 348px;
+    min-height: 345px;
+    }
 
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -305,6 +363,14 @@
       span {
       color: #fff;
   
+      }
+
+      @media (max-width: 480px) {
+        margin-top: 30px;
+        padding-left: 10px;
+        font-size: 80px;
+        line-height: 70px;
+        margin-bottom: 10px;
       }
     }
     .contatct-cta{

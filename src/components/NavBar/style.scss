@@ -1,0 +1,224 @@
+.nav-bar{
+    height: 79px;
+    background-color: #131313;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+    @media (max-width: 768px) {
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        
+       }
+    .nav-bar-logo{
+        display: flex;
+        
+        
+        align-items: center;
+        @media (max-width: 768px) {
+        .logo{
+            height: 45px;
+            width: 144px;
+            max-width: 100%;
+        }
+           }
+        .toggle-btn{
+            width: 1em;
+    height: 1em;
+    color: #222222;
+    border-radius: 5px;
+    background-color: #fff;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 14px;
+    padding-bottom: 2px;
+    span{
+
+    
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    }
+        }
+      
+        &:hover{
+            .nav-bar-dropdown{
+                display: block;
+            }
+        }
+    }
+    .nav-bar-dropdown{
+        display: none;
+        width: 403px;
+        background-color: #131313;
+        border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+position: absolute;
+top: 75px;
+min-height: 100vh;
+@media (max-width: 768px) {
+    left: 0px;
+    padding:10px;
+    width: 100%;
+  }
+        .dropdown-card{
+            
+            img{
+                max-width: 100%;
+                height: 50px;
+                object-fit: contain;
+                margin-bottom: 10px;
+            }
+            padding: 10px;
+border-radius: 5px;
+background-color: #1f1f1f;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 16px;
+line-height: 22px;
+font-weight: 500;
+
+        }
+        .product-section{
+            
+            .product-heading{
+                margin-bottom: 15px;
+            }
+            .product-card-container{
+                
+                
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 15px;
+    column-gap: 15px;
+    @media (max-width: 768px) {
+        grid-template-columns: auto;
+        padding-left: 25%;
+      }
+                .product-card{
+                    text-decoration: underline;
+                    height: 112px;
+                width: 187px;
+                }
+            }
+        }
+        .follow-up-btns{
+            display: grid;
+            grid-template-columns: auto auto;
+            
+            margin-top: 25px;
+            margin-bottom: 25px;
+            @media (max-width: 768px) {
+                grid-template-columns: auto;
+                padding-left: 25%;
+                
+              }
+
+            span{
+
+                width: 182px;
+                height: 42;
+                @media (max-width: 768px) {
+                    
+                    margin-bottom: 15px;
+                  }
+            }
+        }
+        .app-section{
+            
+            .app-heading{
+                margin-bottom: 15px;
+            }
+            .app-card-container{
+                display: grid;
+                grid-template-columns: auto auto;
+                row-gap: 15px;
+                column-gap: 15px;
+                @media (max-width: 768px) {
+                    grid-template-columns: auto;
+                    padding-left: 25%;
+                  }
+                div{
+                    text-decoration: underline;
+                    height: 112px;
+                width: 187px;
+                }
+            }
+        }
+    }
+    .nav-bar-class-selector-desktop{
+
+      :nth-child(1){
+        margin-right: 40px;
+        cursor: pointer;
+        &:hover{
+            color: #45b941;
+        }
+      }
+      :nth-child(2){
+        cursor: pointer;
+        &:hover{
+            color: #45b941;
+        }
+
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .nav-bar-class-selector-mobile{
+        display: none;
+        .mobile-class-selector-img{
+            height: 30px;
+            width: 48.97px;
+        }
+        @media (max-width: 768px) {
+       display: block;
+    }
+    .class-selector-dropdown{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        height: 120px;
+        width: 75%;
+        left:15% ;
+     transform: translateY(-200px);   
+    transition: transform 400ms ease 0s;
+    background-color: #121212;
+    
+    
+     
+        span{
+            
+            font-size: 18px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    
+        }
+    }
+    .active{
+        
+        transform: translateY(10px);   
+        
+    }
+    }
+    
+}
